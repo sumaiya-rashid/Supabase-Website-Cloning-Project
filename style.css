@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+body {
+    background: #000;
+    color: #f5efef;
+}
+
+header {
+    background: #000;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo {
+    color: #f5efef;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 2rem;
+    align-items: center; 
+}
+
+.nav-items li {
+    display: flex;
+    align-items: center; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fdcd;
+    padding: 0.5rem 1rem;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+nav a:hover {
+    color: #090909;
+}
+
+.btn, .btn-primary, .btn-secondary {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: normal; 
+}
+
+.btn-primary {
+    background-color: #3ecf8e;
+    color: #f5efef;
+}
+
+.btn-primary:hover {
+    background-color: #34b97d;
+}
+
+.btn-secondary {
+    background-color: #2d2e30;
+    color: #f5efef;
+}
+
+.btn-secondary:hover {
+    background-color: #2d2e30;
+}
+
+.hero {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 2rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.column-left h2 {
+    font-size: 68px;
+    margin-bottom: 0.2rem;
+}
+
+.column-left h3 {
+    font-size: 68px;
+    margin-bottom: 1rem;
+}
+
+.column-left p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.highlight {
+    color: #3ecf8e;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        padding: 0 1rem;
+    }
+
+    .column-left h2, .column-left h3 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 0.75rem 2rem;
+    }
+}
