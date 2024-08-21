@@ -6,12 +6,12 @@
 }
 
 body {
-    background: #000;
-    color: #f5efef;
+    background: #121212;
+    color: #b6b6b6;
 }
 
 header {
-    background: #000;
+    background: #121212;
 }
 
 nav {
@@ -39,9 +39,15 @@ nav {
 }
 
 .logo {
-    color: #f5efef;
+    color: #f2f7f5;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.partnercompaniesPic {
+    width: auto; 
+    height: auto;
+    margin-top:8rem;
 }
 
 .nav-items {
@@ -59,20 +65,20 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #fdcd;
+    color: #f2f7f5;
     padding: 0.5rem 1rem;
     display: inline-block; 
     vertical-align: middle; 
 }
 nav a:hover {
-    color: #090909;
+    color: #121212;
 }
 
 .btn, .btn-primary, .btn-secondary {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
@@ -81,17 +87,17 @@ nav a:hover {
 }
 
 .btn-primary {
-    background-color: #3ecf8e;
-    color: #f5efef;
+    background-color: #02603b;
+    color:#f2f7f5;
 }
 
 .btn-primary:hover {
-    background-color: #34b97d;
+    background-color: #02603b;
 }
 
 .btn-secondary {
     background-color: #2d2e30;
-    color: #f5efef;
+    color:#f2f7f5;
 }
 
 .btn-secondary:hover {
@@ -99,11 +105,11 @@ nav a:hover {
 }
 
 .hero {
-    background: #000;
+    background: #121212;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 120vh;
     padding: 0 2rem;
 }
 
@@ -118,7 +124,7 @@ nav a:hover {
 
 .column-left h2 {
     font-size: 68px;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0rem;
 }
 
 .column-left h3 {
