@@ -36,8 +36,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px; /* Adjust the size of the icon */
-    margin-right: 1rem; /* Add some space between the icon and the buttons */
+    font-size: 24px; 
+    margin-right: 1rem; 
 }
 .nav-right {
     display: flex;
@@ -178,8 +178,8 @@ nav a:hover {
 
 .box {
     background-color: hsl(0, 0%, 9.02%);
-    flex: 1 1 calc(25% - 1rem); /* Adjust the width to fit four boxes in one row */
-    max-width: calc(25% - 1rem); /* Same adjustment for the maximum width */
+    flex: 1 1 calc(25% - 1rem);
+    max-width: calc(25% - 1rem); 
     border-radius: 8px;
     padding: 32px 24px;
     text-align: center;
