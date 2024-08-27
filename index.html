@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supabase | The Open Source Firebase Alternative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,14 +13,21 @@
             <div class="nav-left">
                 <img src="supabaselogo1.jpg" alt="Supabase logo" class="nav-logo"/>
                 <ul class="nav-items">
-                    <li><a href="#product">Product</a></li>
-                    <li><a href="#developers">Developers</a></li>
+                    <select class="nav-select">
+                        <option><a href="#product">Product</a></option>
+                    </select>
+                    <select class="nav-select">
+                        <option><a href="#developers">Developers</a></option>
+                    </select>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#docs">Docs</a></li>
                     <li><a href="#blogs">Blogs</a></li>
                 </ul>
             </div>
             <div class="nav-right">
+                <div class="githubicon">
+                    <i class="fab fa-github"></i>
+                </div>
                 <ul class="nav-items">
                     <li><a href="#signin" class="btn-secondary">Sign in</a></li>
                     <li><a href="#startyourproject" class="btn-primary">Start your project</a></li>
@@ -49,34 +57,53 @@
             </div>
         </section>
         <section class="feature-section">
-            <div class="feature-box-1">
-                <img src="databaseicon.JPG" alt="Database Icon" class="feature-icon">
-                <h3>Database</h3>
-                <p>Every project is a full Postgres<br>
-                    database, the world's most<br> trusted rational database.</p>
-                <img src="databasefeatureboximg.JPG" alt="databasefeatureboxanimation" class="databaseanimation"/>
-                <li></li>
+            <div class="feature-box-1 box">
+                <div class="box-content">
+                    <img src="databaseicon.JPG" alt="Database Icon" class="feature-icon">
+                    <h3>Database</h3>
+                    <p>Every project is a full Postgres<br>
+                    database, the world's most<br> trusted relational database.</p>
+                    <img src="database.webp" alt="databasefeatureboxanimation" class="box-img"/>
+                    <ul>
+                        <li>100% portable</li>
+                        <li>Built-in Auth with RLS</li>
+                        <li>Easy to extend</li>
+                    </ul>
+                </div>
             </div>
-            <div class="feature-box-2">
-                <img src="authenticationicon.JPG" alt="Authentication Icon" class="feature-icon">
-                <h3>Authentication</h3>
-                <p>Add user sign ups and logins,<br>
-                    securing your data with low level<br>
-                     security. 
-                </p>
+            <div class="feature-box-2 box">
+                <div class="box-content">
+                    <img src="authenticationicon.JPG" alt="Authentication Icon" class="feature-icon">
+                    <h3>Authentication</h3>
+                    <p>Add user sign-ups and logins,<br>
+                    securing your data with low-level<br>
+                    security.</p>
+                    <img src="auth-active.svg" alt="authfeatureboxanimation" class="box-img"/>
+                </div>
             </div>
-            <div class="feature-box-3">
-                <img src="edgefunctionicon.JPG" alt="Edge Function Icon" class="feature-icon">
-                <h3>Edge Functions</h3>
-                <p>Easily write custom code <br>
+            <div class="feature-box-3 box">
+                <div class="box-content">
+                    <img src="edgefunctionicon.JPG" alt="Edge Function Icon" class="feature-icon">
+                    <h3>Edge Functions</h3>
+                    <p>Easily write custom code<br>
                     without deploying or scaling<br>
-                servers</p>
+                    servers.</p>
+                    <img src="edge-functions.webp" alt="edgefeaturebox" class="box-img"/>
+                </div>
             </div>
-        </section>        
+            <div class="feature-box-4 box">
+                <div class="box-content">
+                    <img src="storageicon.JPG" alt="Storage Icon" class="feature-icon">
+                    <h3>Storage</h3>
+                    <p>Store, organize, and serve large<br>
+                    files, from videos to images.</p>
+                    <img src="storageimg.JPG" alt="storagefeaturebox" class="box-img"/>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <nav>
-
         </nav>
     </footer>
 </body>
