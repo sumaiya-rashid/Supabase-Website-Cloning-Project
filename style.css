@@ -1,8 +1,14 @@
 * {
-    border: border-box;
-    margin: auto;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header, nav, .hero, .feature-section, footer {
+    margin: 0 auto; /* Center content horizontally */
+    max-width: 1200px; /* Consistent max-width for all sections */
+    padding: 24px; /* Uniform padding */
 }
 
 body {
@@ -24,10 +30,9 @@ nav {
     border-bottom:rgb(46, 46, 46);
     border-bottom-width: 0px;
     line-height: 24 px;
-    box-sizing: border-box;
 }
 
-.nav-left {
+.nav-left, .nav-right {
     display: flex;
     align-items: center;
 }
@@ -39,10 +44,7 @@ nav {
     font-size: 24px; 
     margin-right: 1rem; 
 }
-.nav-right {
-    display: flex;
-    align-items: center;
-}
+
 .nav-select {
     background-color: #121212 ;
     color: #f2f7f5;
@@ -138,16 +140,12 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding: 48px 24px;
 }
 
-.column-left h1 {
+.column-left h1, .column-left h2 {
     font-size: 72px;
     margin-bottom: 0rem;
-}
-
-.column-left h2 {
-    font-size: 72px;
-    margin-bottom: 1rem;
 }
 
 .column-left p {
@@ -167,24 +165,21 @@ nav a:hover {
 
 .feature-section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
     background-color: #121212;
     color: #f5f5f5;
-    padding: 32px 24px;
-    margin: 0 auto;
+    padding: 48px 32px; 
 }
 
 .box {
     background-color: hsl(0, 0%, 9.02%);
     flex: 1 1 calc(25% - 1rem);
-    max-width: calc(25% - 1rem); 
     border-radius: 8px;
     padding: 32px 24px;
     text-align: center;
-    box-sizing: border-box;
-    position: relative;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -198,19 +193,15 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.box-content {
+.box-content, .box p {
     color: #f5f5f5;
+    margin: 16px 0; /* Consistent margins */
+    line-height: 1.5rem;
 }
 
 .box h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-}
-
-.box p {
-    font-size: 1rem;
-    color: #b6b6b6;
-    line-height: 1.5rem;
 }
 
 .box ul {
