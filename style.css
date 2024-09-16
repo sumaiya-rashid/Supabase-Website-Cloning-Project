@@ -149,8 +149,10 @@ nav a:hover {
 }
 
 .column-left p {
-    font-size: 18px;
+    margin-top: 1rem;
+    font-size: 16px;
     margin-bottom: 2rem;
+    line-height: 1.4;
 }
 
 .buttons {
@@ -174,9 +176,13 @@ nav a:hover {
     padding: 48px 32px; 
 }
 
+.feature-box-1, .feature-box-6 {
+    flex-grow: 2;
+}
+
 .box {
     background-color: hsl(0, 0%, 9.02%);
-    flex: 1 1 calc(33.33% - 1rem); 
+    /*flex: 1 1 calc(33.33% - 1rem); */
     border-radius: 8px;
     padding: 16px 12px;
     text-align: center;
